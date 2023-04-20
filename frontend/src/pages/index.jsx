@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyCOZnnAX_Bxbn7Gvga8ZUZiXhrFthrdr60'
+    googleMapsApiKey: ''
   })
 
 
