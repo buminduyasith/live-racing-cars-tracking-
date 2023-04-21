@@ -1,1 +1,16 @@
 components list
+
+Nodemcu
+Gps Neo-6M module
+Lcd display (16*2)
+I2c module
+LM2596 DC-DC voltage regulator
+Led bulb
+IN4001 diode
+12v relay
+On Off switch
+DC jack base
+Jumper wiires (female - female)
+1.2v Ni-Cd rechargeble battery *4
+Battery holder
+Enclosure
