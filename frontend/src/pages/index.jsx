@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Layout from '@/components/layout/layout'
 
-import Map, { NavigationControl } from 'react-map-gl';
+import Map, { NavigationControl, Marker } from 'react-map-gl';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -19,13 +19,18 @@ export default function Home() {
           <div>
             <Map mapLib={maplibregl}
               initialViewState={{
-                longitude:  5.947824,
-                latitude: 80.5483,
-                zoom: 10
+                longitude:  13.084622,
+                latitude: 80.248357,
+                zoom: 14
               }}
               style={{ width: "100%", height: " calc(100vh - 77px)" }}
-              mapStyle="https://api.maptiler.com/maps/streets/style.json?key=6KlK94OorBZ584iRkFjn"
-            />
+              mapStyle="https://api.maptiler.com/maps/streets/style.json?key=6KlK94OorBZ584iRkFjn">
+
+              <NavigationControl position='top-left' />
+              <Marker longitude={13.084622} latitude={80.208357} color='#212529' />
+              <Marker longitude={11.084622} latitude={80.208357} color='#212529' />
+              <Marker longitude={10.084622} latitude={80.208357} color='#212529' />
+              </Map>
           </div>
         </div>
       </section>
