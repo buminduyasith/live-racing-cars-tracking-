@@ -19,17 +19,18 @@ export default function Home() {
           <div>
             <Map mapLib={maplibregl}
               initialViewState={{
-                longitude:  13.084622,
-                latitude: 80.248357,
+                longitude:  80.54993,
+                latitude: 5.94332,
                 zoom: 14
               }}
               style={{ width: "100%", height: " calc(100vh - 77px)" }}
               mapStyle="https://api.maptiler.com/maps/streets/style.json?key=6KlK94OorBZ584iRkFjn">
 
               <NavigationControl position='top-left' />
-              <Marker longitude={13.084622} latitude={80.208357} color='#212529' />
-              <Marker longitude={11.084622} latitude={80.208357} color='#212529' />
-              <Marker longitude={10.084622} latitude={80.208357} color='#212529' />
+             {/*  lat, long geo:5.94303,80.54997?z=19 */}
+              <Marker longitude={80.54928} latitude={5.94292} color='#212529' />
+              <Marker longitude={80.54997} latitude={5.94303} color='#d81d61' />
+              <Marker longitude={80.54997} latitude={5.94483} color='#ffd54f' />
               </Map>
           </div>
         </div>
