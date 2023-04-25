@@ -31,6 +31,15 @@ export default function Home() {
     });
   }, [])
 
+  const getRandomColor = () => {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 8)]; // use only first 8 characters for darker colors
+    }
+    return color;
+  }
+
   return (
     <Layout>
       <section className="text-center">
@@ -50,7 +59,7 @@ export default function Home() {
             <NavigationControl position='top-left' />
             {/*  lat, long geo:5.94303,80.54997?z=19 */}
             {cars?.map((item, index) => (
-               <Marker longitude={item.longitude} latitude={item.latitude} color='#212529' key={index} />
+               <Marker longitude={item.longitude} latitude={item.latitude} color={ getRandomColor()} key={index} />
             ))}
           </Map>
         </div>
