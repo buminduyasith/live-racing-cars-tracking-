@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import Layout from '@/components/layout/layout'
 
 import Map, { NavigationControl, Marker } from 'react-map-gl';
@@ -51,7 +48,7 @@ export default function Home() {
             initialViewState={{
               longitude: 80.54993,
               latitude: 5.94332,
-              zoom: 14
+              zoom: 18
             }}
             style={{ width: "100%", height: " calc(100vh - 77px)" }}
             mapStyle="https://api.maptiler.com/maps/streets/style.json?key=6KlK94OorBZ584iRkFjn">
